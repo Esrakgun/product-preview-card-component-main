@@ -1,0 +1,159 @@
+/* Google Fonts Area 
+;
+ */
+ /* <!-- 
+ <style>
+   .attribution {  }
+   .attribution a { color: hsl(228, 45%, 44%); }
+ </style> --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: 0;
+    cursor: pointer;
+}
+
+:root{
+--Green500: hsl(158, 36%, 37%);
+--Green700: hsl(158, 42%, 18%);
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+
+
+
+}
+
+body{
+    background-color:var(--Cream);
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Fraunces", serif;
+    font-size: 12px;
+    display:flex;
+    text-align: start;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    padding: 150px;
+   
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5px;
+    background-color:var(--White);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width:1000px;
+   
+}
+    
+
+
+.card .partone {
+    line-height: 0;  /* fotograg ve kart tek lınena oturdu üst üste  */
+}
+
+.card img{
+    width:500px;
+    height: 50%;
+    border-radius: 20px 0  0 20px;
+    object-fit: cover;
+}
+  
+
+.card .parttwo{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-left: 35px;
+    
+}
+
+.card .parttwo .btn{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* ikon ve yazı arasında boşluk */
+    font-size: 18px;
+    width:350px;
+    height:60px;
+    border-radius: 15px;
+    background-color: var(--Green500);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card .parttwo .btn:hover {
+    background-color: var(--Green500);
+    transform: scale(1.03);
+  
+}
+  
+.card .parttwo .g1{
+    font-family: "Montserrat", sans-serif; 
+    color: var(--Grey);
+    font-size: 18px;
+    font-weight: 600;
+    line-height:40px;
+}
+
+.card .parttwo .A{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    gap: 25px;
+    margin-top: 35px;
+   
+}
+.card .parttwo p{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.card .parttwo h1{
+    font-size:45px;
+    line-height: 45px;
+} 
+.card .parttwo .A h2{
+    font-size:35px;
+    color:var(--Green500);
+    margin-bottom: 25px;
+}
+
+.card .parttwo .g2 {
+  
+    text-decoration: line-through;
+    font-family: "Montserrat", sans-serif; 
+    color: var(--Grey);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+  
+
+  /* @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card img {
+      border-radius: 20px 20px 0 0;
+      max-width: 100%;
+    }
+  } */
+  
